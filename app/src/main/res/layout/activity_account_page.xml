@@ -8,90 +8,109 @@
     android:background="@drawable/bg_for_acc">
 
     <ImageView
+        android:id="@+id/imageView13"
         android:layout_width="match_parent"
         android:layout_height="40.5dp"
         android:background="@drawable/rectangle_up"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="15.5dp"
-        android:background="@drawable/line"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="215dp" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="27dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="133dp"
         android:layout_height="109dp"
-        app:srcCompat="@drawable/account_icon"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="57dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/account_icon" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/nameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
         android:fontFamily="@font/inter_extrabold"
         android:text="NAME"
         android:textSize="18dp"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="166dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/usernameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inder"
         android:text="Username"
         android:textSize="14dp"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="192dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton20"
-        android:layout_width="27dp"
-        android:layout_height="24dp"
-        android:background="@drawable/baseline_arrow_back_ios_24"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="10dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.043" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="356dp"
         android:layout_height="589dp"
         android:outlineAmbientShadowColor="@color/black"
+        app:cardBackgroundColor="#F1CACA"
         app:cardCornerRadius="10dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="231dp"
-        app:cardBackgroundColor="#F1CACA">
-        
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/profile"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
+            android:fontFamily="@font/inter_bold"
             android:text="Profile"
             android:textColor="#7C7878"
-            android:fontFamily="@font/inter_bold"
-            android:textSize="15dp"/>
+            android:textSize="15dp" />
 
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/orders"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="100dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Orders"
@@ -101,18 +120,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/addressBook"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="150dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Address Book"
@@ -122,18 +141,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="170dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="170dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/wishlist"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="195dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="195dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Wishlist"
@@ -143,18 +162,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="225dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="225dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/contactUs"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="250dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="250dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Contact Us"
@@ -164,18 +183,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="280dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="280dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/help"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="300dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="300dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Help"
@@ -185,18 +204,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="330dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="330dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <TextView
-            android:id="@+id/text1"
+            android:id="@+id/signOut"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="360dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="360dp"
             android:layout_marginBottom="0dp"
             android:fontFamily="@font/inter_bold"
             android:text="Sign out"
@@ -206,18 +225,18 @@
         <ImageView
             android:layout_width="320dp"
             android:layout_height="15.5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="385dp"
             android:background="@drawable/line"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="215dp"
-            android:layout_marginTop="385dp"
-            android:layout_marginStart="20dp"/>
+            tools:layout_editor_absoluteY="215dp" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="@drawable/logo"
             android:layout_gravity="center"
-            android:layout_marginTop="200dp"/>
+            android:layout_marginTop="200dp"
+            android:background="@drawable/logo" />
 
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
